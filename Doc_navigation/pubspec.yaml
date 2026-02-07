@@ -1,23 +1,28 @@
-name: drds_demo_app
-description: "DRDS Flutter Web App"
+name: doc_navigation
+description: DRDS - Live Medical Navigation Map
 publish_to: 'none'
-
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.10.7
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-
+  
+  # Map rendering
+  flutter_map: ^7.0.2
+  
+  # Geographic coordinates
+  latlong2: ^0.9.1
+  
+  # HTTP requests for routing
   http: ^1.2.0
-  cupertino_icons: ^1.0.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^6.0.0
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
